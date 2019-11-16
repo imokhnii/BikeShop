@@ -1,0 +1,11 @@
+﻿
+<h1>All bikes we have!</h1>
+<h2>@Model.CurrentCategory</h2>
+
+@{
+    foreach (var bike in Model.AllBikes)
+    {
+        <h2>Model: @bike.Model</h2>
+        <p>Price: @bike.Price.ToString("c")</p>
+    }
+}
